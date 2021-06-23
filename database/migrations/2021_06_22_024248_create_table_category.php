@@ -14,8 +14,9 @@ class CreateTableCategory extends Migration
     public function up()
     {
         Schema::create('categories', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id();// tạo khóa chính tên là id kiểu dữ liệu big int 20  auto increment
+            $table->string("name");
+            $table->timestamps();// created_at updated_at : date time
         });
     }
 
