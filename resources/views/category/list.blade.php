@@ -1,5 +1,5 @@
 @extends("layout")
-@section("page_tittle","Categories")
+@section("page_title","Categories")
 @section("main")
     <div class="content-header">
         <div class="container-fluid">
@@ -9,7 +9,7 @@
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{url("categories/new")}}">New category</a></li>
+                        <li class="breadcrumb-item"><a href="{{url("admin/categories/new")}}">New category</a></li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -24,6 +24,7 @@
                         <thead>
                         <th>ID</th>
                         <th>Name</th>
+                        <th>Product Count</th>
                         <th>Created at</th>
                         <th>Updated at</th>
                         </thead>
@@ -32,13 +33,13 @@
                             <tr>
                                 <td>{{$item->id}}</td>
                                 <td>{{$item->name}}</td>
+                                <td>{{$item->products_count}}</td>
                                 <td>{{$item->created_at}}</td>
                                 <td>{{$item->updated_at}}</td>
                             </tr>
                         @endforeach
                         </tbody>
                     </table>
-
                 </div>
             </div>
         </div>

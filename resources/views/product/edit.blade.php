@@ -1,5 +1,5 @@
 @extends("layout")
-@section("page_tittle","Products")
+@section("page_title","Products")
 @section("main")
     <div class="content-header">
         <div class="container-fluid">
@@ -21,7 +21,7 @@
             <!-- Small boxes (Stat box) -->
             <div class="row">
                 <div class="col-6">
-                    <form action="{{url("/products/update",["id"=>$product->id])}}" method="post">
+                    <form action="{{url("admin/products/update",["id"=>$product->id])}}" method="post">
                         @csrf
                         <div class="form-group">
                             <label>Name</label>

@@ -1,5 +1,5 @@
 @extends("layout")
-@section("page_tittle","Categories")
+@section("page_title","Categories")
 @section("main")
     <div class="content-header">
         <div class="container-fluid">
@@ -21,7 +21,7 @@
             <!-- Small boxes (Stat box) -->
             <div class="row">
                 <div class="col-6">
-                    <form action="{{url("/categories/save")}}" method="post">
+                    <form action="{{url("admin/categories/save")}}" method="post">
                         @csrf
                         <div class="form-group">
                             <label>Name</label>

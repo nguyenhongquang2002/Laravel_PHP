@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <x-head/>
+<x-head/>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+        <img class="animation__shake" src="{{asset("dist/img/AdminLTELogo.png")}}" alt="AdminLTELogo" height="60" width="60">
     </div>
 
     <!-- Navbar -->
@@ -15,16 +15,11 @@
 
     <!-- Main Sidebar Container -->
     <x-aside/>
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-    @yield("main")
-    <!-- Content Header (Page header) -->
+        @yield("main")
 
-        <!-- /.content-header -->
-
-        <!-- Main content -->
-
-        <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
 
