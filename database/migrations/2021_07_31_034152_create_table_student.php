@@ -20,6 +20,7 @@ class CreateTableStudent extends Migration
             $table->string("phone");
             $table->text("feedback");
             $table->timestamps();
+
         });
     }
 

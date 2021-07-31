@@ -33,9 +33,9 @@ Route::middleware("auth","admin")->group(function (){ // bắt phải login mớ
     Route::get("/students",[StudentController::class,"all"]);
     Route::get("/students/new",[StudentController::class,"form"]);
     Route::post("/students/save",[StudentController::class,"save"]);
-    Route::get("/students/save",[StudentController::class,"edit"]);
-    Route::post("/students/save",[StudentController::class,"update"]);
-    Route::get("/students/save",[StudentController::class,"delete"]);
+    Route::get("/students/edit/{id}",[StudentController::class,"edit"]);
+    Route::post("/students/update/{id}",[StudentController::class,"update"]);
+    Route::get("/students/delete/{id}",[StudentController::class,"delete"]);
 
 });
 

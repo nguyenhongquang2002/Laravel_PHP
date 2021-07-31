@@ -103,4 +103,5 @@ class StudentController extends Controller
             abort(404);
         }
     }
+
 }

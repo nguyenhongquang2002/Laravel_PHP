@@ -16,6 +16,7 @@ class Student extends Model
         "email",
         "phone",
         "feedback",
+
     ];
 //    public $timestamps = true;// mặc định là true  -> tự động cập nhật thời gian vào 2 cột created_at và updated_at
 }
