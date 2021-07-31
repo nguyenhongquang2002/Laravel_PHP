@@ -42,29 +42,35 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url("admin/about-us") }}" class="nav-link">
-                        <i class="nav-icon far fa-circle text-warning"></i>
-                        <p>About us</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ url("admin/categories") }}" class="nav-link">
-                        <i class="nav-icon far fa-circle text-info"></i>
-                        <p>Categories</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ url("admin/products") }}" class="nav-link">
+                    <a href="{{ url("admin/students") }}" class="nav-link">
                         <i class="nav-icon far fa-circle text-green"></i>
-                        <p>Products</p>
+                        <p>Student</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ url("admin/brands") }}" class="nav-link">
-                        <i class="nav-icon far fa-circle text-pink"></i>
-                        <p>Brands</p>
-                    </a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{ url("admin/about-us") }}" class="nav-link">--}}
+{{--                        <i class="nav-icon far fa-circle text-warning"></i>--}}
+{{--                        <p>About us</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{ url("admin/categories") }}" class="nav-link">--}}
+{{--                        <i class="nav-icon far fa-circle text-info"></i>--}}
+{{--                        <p>Categories</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{ url("admin/products") }}" class="nav-link">--}}
+{{--                        <i class="nav-icon far fa-circle text-green"></i>--}}
+{{--                        <p>Products</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{ url("admin/brands") }}" class="nav-link">--}}
+{{--                        <i class="nav-icon far fa-circle text-pink"></i>--}}
+{{--                        <p>Brands</p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

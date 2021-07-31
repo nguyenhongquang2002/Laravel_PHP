@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\StudentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,14 @@ Route::middleware("auth","admin")->group(function (){ // bắt phải login mớ
     Route::get("/products/edit/{id}",[ProductController::class,"edit"]);
     Route::post("/products/update/{id}",[ProductController::class,"update"]);
     Route::get("/products/delete/{id}",[ProductController::class,"delete"]);
+
+    Route::get("/students",[StudentController::class,"all"]);
+    Route::get("/students/new",[StudentController::class,"form"]);
+    Route::post("/students/save",[StudentController::class,"save"]);
+    Route::get("/students/save",[StudentController::class,"edit"]);
+    Route::post("/students/save",[StudentController::class,"update"]);
+    Route::get("/students/save",[StudentController::class,"delete"]);
+
 });
 
 
